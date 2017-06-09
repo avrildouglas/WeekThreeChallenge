@@ -12,7 +12,7 @@ public class Education {
    // constructor
    public Education(String Edname) {
       this.EdName = EdName;
- //   EdSubs = new ArrayList<Education>();
+      EdSubs = new ArrayList<Education>();
    }
 
    public void add(Education u) {
@@ -28,6 +28,7 @@ public class Education {
    }
 
    public String toString(){
-      return ("Education\t\r\n" + EdName);
+      return (EdName);
+     // return ("Education\t\r\n" + EdName);
    }   
 }

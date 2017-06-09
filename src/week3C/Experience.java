@@ -7,12 +7,12 @@ public class Experience {
 
    private String ExName;
    private ArrayList<Experience> ExSubs;
- //  ArrayList<String>Experience = new ArrayList<String>();
+
 
    // constructor
    public Experience(String Exname) {
       this.ExName = ExName;
- //   EdSubs = new ArrayList<Experience>();
+      ExSubs = new ArrayList<Experience>();
    }
 
    public void add(Experience x) {
@@ -28,6 +28,7 @@ public class Experience {
    }
 
    public String toString(){
-      return ("Experience\t\r\n" + ExName);
+	   return (ExName);
+    //  return ("Experience\t\r\n" + ExName);
    }   
 }

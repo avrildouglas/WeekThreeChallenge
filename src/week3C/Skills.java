@@ -7,12 +7,12 @@ public class Skills {
 
    private String SkName;
    private ArrayList<Skills> SkSubs;
- //  ArrayList<String>Skills = new ArrayList<String>();
+
 
    // constructor
    public Skills(String SkName) {
       this.SkName = SkName;
- //   EdSubs = new ArrayList<Skills>();
+      SkSubs = new ArrayList<Skills>();
    }
 
    public void add(Skills k) {
@@ -28,6 +28,7 @@ public class Skills {
    }
 
    public String toString(){
-      return ("skills\t\r\n" + SkName);
+	 return (SkName);
+    //  return ("skills\t\r\n" + SkName);
    }   
 }
